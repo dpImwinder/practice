@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>玩家画廊</title>
+    <link rel="shortcut icon" href="./img/icon.ico">
+    <link rel="stylesheet" href="./css/ex.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+    <script src="./js/move.js"></script>
+    <script src="./js/gallery.js"></script>
+</head>
+<body>
+    <!-- 主体 -->
+    <div id="wrap">
+        <a href="./show1.html" class="hb">
+            <div class="c">
+            <img src="./img/chaos/Abaddon the Despoiler/01.jpg">
+            <div class="txt">
+                <h1> 掠夺者 阿巴顿</h1>
+                <p>Abaddon the Despoiler</p>
+            </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="./img/chaos-cat-1.jpg" alt="">
+        </div>
+
+
+        <a href="./show2.html" class="hb">
+            <div class="c">
+            <img src="./img/chaos/Mortarion, Daemon Primarch of Nurgle/01-01.jpg" alt="">
+            <div class="txt">
+                <h1>莫塔里安 死亡守卫的基因原体</h1>
+                <p>Mortarion, Daemon Primarch of Nurgle</p>
+            </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="./img/chaos-cat-1.jpg" alt="">
+        </div>
+
+
+        <a href="./show3.html" class="hb">
+            <div class="c">
+            <img src="./img/empire/Imperial Knight Paladin/01-01.jpg" alt="">
+            <div class="txt">
+                <h1>帝国泰坦 帕拉丁型</h1>
+                <p>Imperial Knight Paladin</p>
+            </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="./img/AdeptusAstartes-cat.jpg" alt="">
+        </div>
+
+
+        <a href="./show4.html" class="hb">
+            <div class="c">
+            <img src="./img/empire/LandRaiderRedeemer/01.jpg" alt="">
+            <div class="txt">
+                <h1>兰德突袭者 救赎者型号</h1>
+                <p>Land Raider Redeemer</p>
+            </div>
+            </div>
+        </a>
+        <div class="fullBg">
+            <img src="./img/AdeptusAstartes-cat.jpg" alt="">
+        </div>
+
+
+        <a href="./show5.html" class="hb">
+            <div class="c">
+                <img src="./img/xenos/Eldrad Ulthran/01-01.jpg" alt="">
+                <div class="txt">
+                <h1>灵族先知 艾尔德拉德·乌尔斯兰</h1>
+                <p>Eldrad Ulthran</p>
+                </div>
+            </div>
+            </a>
+            <div class="fullBg">
+            <img src="./img/orks-cat-1.jpg" alt="">
+            </div>
+
+
+        <a href="./show6.html" class="hb">
+            <div class="c">
+                <img src="./img/xenos/Ghazghkull Thraka/01.jpg" alt="">
+                <div class="txt">
+                <h1>碎骨者嘎兹卡尔.斯拉卡</h1>
+                <p>Ghazghkull Thraka</p>
+                </div>
+            </div>
+            </a>
+            <div class="fullBg">
+            <img src="./img/orks-cat-1.jpg" alt="">
+            </div>
+          </div>
+</body>
+<script>
+        $(function(){
+            $(document).ready(function(){
+      var docWidth = $('body').width(),
+          $wrap = $('#wrap'),
+          $images = $('#wrap .hb'),
+          slidesWidth = $wrap.width();
+      
+      $(window).on('resize', function(){
+        docWidth = $('body').width();
+        slidesWidth = $wrap.width();
+      })
+      
+      $(document).mousemove(function(e) {
+        var mouseX = e.pageX,
+            offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+        
+        $images.css({
+          '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+                  'transform': 'translate3d(' + -offset + 'px,0,0)'
+        });
+      });
+    })
+        })
+    </script>
+</html>

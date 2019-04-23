@@ -1,0 +1,74 @@
+.footer{
+    background: black;
+    padding: 50px 0;
+    height: 150px;
+}
+.footer img{
+    width: 200px;
+    display: inline-block;
+    margin-top: 22px;
+}
+.footer p{
+    color: white;
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    font:12px/20px "Microsoft Yahei";
+}
+.footer-icon>span{
+    height: 56px;
+    width: 56px;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin: 30px 10px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.fi1:hover{
+    background: url(../img/icons.png) no-repeat -1026px -68px;
+    border-color: white;
+    border-radius: 50%;
+}
+.fi1{
+    background: url(../img/icons.png) no-repeat -1092px -68px;
+}
+.fi2:hover{
+    background: url(../img/icons.png) no-repeat -1026px -196px;
+    border-color: white;
+    border-radius: 50%;
+}
+.fi2{
+    background: url(../img/icons.png) no-repeat -1092px -196px;
+}
+.fi3:hover{
+    background: url(../img/icons.png) no-repeat -1026px -324px;
+    border-color: white;
+    border-radius: 50%;
+}
+.fi3{
+    background: url(../img/icons.png) no-repeat -1092px -324px;
+}
+/* 回到顶部 */
+.goTop{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    position: relative;
+}
+.goTop>span{
+    width: 48%;
+    border-bottom: 3px solid black;
+    height: 40px;
+    display: block;
+}
+.goTop>img{
+    position: absolute;
+    top: 7px;
+    left: 48%;
+    width: 4%;
+    cursor: pointer;
+}
+.goTop>img:hover{
+    top: 0;
+}

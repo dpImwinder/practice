@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script>
+        $(function(){
+            // 监听页面滚动
+            $(window).on('scroll',null,$('.goTop'),function(e){
+                console.log($(window).scrollTop());
+                console.log($(document).height()- $(window).height())
+                if($(window).scrollTop()<=($(document).height()- $(window).height()-250) && $(window).scrollTop()>200){
+                    e.data.fadeIn();
+                    e.data.css({'position':'fixed','bottom':'0'})
+                }if($(window).scrollTop()>($(document).height()- $(window).height()-250)){
+                    e.data.fadeIn();
+                    e.data.css({'position':'relative','bottom':'0'})
+                }if($(window).scrollTop()<=200){
+                    e.data.fadeOut();
+                }
+            })
+            
+            // 点击返回顶部
+            $('.rock').on('click',function(){
+                $('body,html').animate({'scrollTop':0})
+            })
+        })
+    </script>
+</head>
+<body>
+    <section class="goTop">
+        <span class="fr"></span>
+        <img src="./img/iconfinder_chevron-top_4115229.png" class="rock">
+        <span class="fl"></span>
+    </section>
+    <section class="footer">
+        <div class="container">
+            <img src="./img/warhammer40k-logo.png">
+            <p>© Copyright Games Workshop Limited 2018. GW, Games Workshop, Citadel, White Dwarf, Space Marine, 40K, Warhammer, Warhammer 40,000, the ‘Aquila’ Double-headed Eagle logo, Warhammer Age of Sigmar, Battletome, Stormcast Eternals, and all associated logos, illustrations, images, names, creatures, races, vehicles, locations, weapons, characters, and the distinctive likenesses thereof, are either ® or ™, and/or © Games Workshop Limited, variably registered around the world. All Rights Reserved.</p>
+            <div class="footer-icon fr">
+                <span class="fi1"></span>
+                <span class="fi2"></span>
+                <span class="fi3"></span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,391 @@
+/* banner */
+.screen{
+    width: 100%;
+    height: 800px;
+    position: relative;
+}
+.screen>ul>li{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    display: none;
+}
+.screen>ul>li>div{
+    position: absolute;
+}
+.screen>ul>li>div{
+    color: white;
+    font-weight: bold;
+}
+.screen .one{
+    bottom: 20%;
+    left: 1%;
+    font: 50px/50px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+}
+.screen .two{
+    bottom: 12%;
+    left: 1%;
+    font: 20px/30px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+}
+.screen .three{
+    color: black;
+    bottom: 4%;
+    left: 1%;
+    font: 20px/30px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    height: 30px;
+    width: 150px;
+    background-color: coral;
+    border: 1px solid coral;
+    border-radius: 15%;
+    text-align: center;
+    cursor: pointer;
+}
+.screen .three:hover{
+    animation: 1s linear running su-pudding;
+}
+.screen .four{
+    top: 25%;
+    left: 10%;
+}
+.screen .five{
+    top: 10%;
+    left: 25%;
+}
+.screen .six{
+    top: 32%;
+    left: 25%;
+}
+.screen .active{
+    display: block;
+}
+/* ol */
+.screen>ol,.teamcontent>ol{
+    width: 120px;
+    background: url(../img/next&prev_line.png) no-repeat center;
+    position: absolute;
+    bottom: 40px;
+    padding-left: 79px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.border-L,.border-R{
+    width: 6px;
+    height: 14px;
+    background: url(../img/next&prev_mbg01.png) no-repeat 0 0;
+}
+.border-R{
+    background-image: url(../img/next&prev_mbg03.png);
+}
+.border-M{
+    width: 30px;
+    height: 10px;
+    background: url(../img/next&prev_mbg02.png) repeat-x;
+    padding-top: 4px;
+}
+.border-M>li{
+    background: url(../img/next&prev_others.png) no-repeat;
+    height: 6px;
+    width: 6px;
+    float: left;
+    cursor: pointer;
+}
+.border-M .active{
+    background-image: url(../img/next&prev_now.png);
+}
+.border-M .special{
+    margin: 0 6px;
+}
+.screen>ol .left,.screen>ol .right,.arrow .left,.arrow .right,.teamcontent>ol .left, .teamcontent>ol .right{
+    position: absolute;
+    width: 29px;
+    height: 29px;
+    background: url(../img/prev_jiantou.png);
+    top: -8px;
+}
+.screen>ol .left,.arrow .left,.teamcontent>ol .left{
+    left: 0;
+}
+.screen>ol .right,.arrow .right,.teamcontent>ol .right{
+    right: 0;
+    background-image: url(../img/next_jiantou.png);
+}
+.screen>ol .left:hover,.arrow .left:hover{
+    background-image: url(../img/prev_jiantou_hover.png);
+}
+.screen>ol .right:hover,.arrow .right:hover{
+    background-image: url(../img/next_jiantou_hover.png);
+}
+.teamcontent>ol .left:hover{
+    background-image: url(../img/prev_jiantou_hover.png);
+}
+.teamcontent>ol .right:hover{
+    background-image: url(../img/next_jiantou_hover.png);
+}
+
+/* 业务范围 */
+.business-scope{
+    padding: 100px 0;
+    text-align: center;
+}
+.business-scope>.container>.title>h1{
+    font: 50px/70px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    font-weight: bold;
+}
+.business-scope>.container>.title>p{
+    font: 30px/50px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    margin-bottom: 50px;
+}
+
+.business li{
+    padding-top: 40px;
+    background: url(../img/next&prev_line.png) repeat-x;
+}
+.business .head{
+    height: 190px;
+}
+.business .xh{
+    color: #999;
+    font-size: 90px;
+    line-height: 100px;
+    width: 24%;
+}
+.panel .left{
+    padding-top: 35px;
+    width: 170px;
+    text-align: center;
+}
+.panel .cn{
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+.panel .en{
+    font-size: 12px;
+    line-height: 2em;
+}
+.panel .btn{
+    margin: 0 56px;  
+    cursor: pointer; 
+}
+.panel .btn>img{
+    width: 116px;
+    height: 116px;
+    border-radius: 50%;
+    border: 1px solid;
+}
+.panel .right{
+    width: 310px;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding-top: 20px;
+}
+.business .closed{
+    width: 67px;
+    height: 67px;
+    background: url(../img/business_zhankaishouqi.png) no-repeat ;
+    margin-top: 24px;
+    cursor: pointer;
+     /* 元素过度 */
+     transition: all 0.5s ease-out;
+}
+.business .foot{
+    margin: 0 auto;
+    width: 800px;
+    height: 0;
+    line-height: 2em;
+    font-size: 14px;
+    overflow: hidden;
+    /* 元素过度 */
+    transition: all 0.5s ease-out;
+}
+.business>.active .foot{
+    height: 200px;
+}
+    
+.business>.active .closed{
+    background-position: 0 -67px;
+}
+/* 通栏图片 */
+.thpic{
+    
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+}
+.thpic1{
+    background: url(../img/Shop-Image-Banner3.jpg) no-repeat 0 -255px;
+    background-size: 100%;
+}
+.thpic2{
+    background: url(../img/Hero-block-Banner1.jpg) no-repeat 0 -280px;
+    background-size: 100%;
+}
+/* 中部导航 */
+.fouricon{
+    background-color: white;
+}
+.fouricon>.container>a{
+    display: block;
+    float: left;
+    width: 250px;
+    text-align: center;
+    margin: 50px 10px 10px 10px;
+    border: 2px solid white;
+}
+.fouricon>.container>a>p{
+    font: 18px/50px "楷体";
+    color: black;
+    font-weight: bold;
+}
+.fouricon>.container>a:hover {
+    border: 2px solid black;
+    transform: translateY(-20px);
+    transition: all 0.3s ease 0s;
+}
+.navconmunity{
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    position: relative;
+    padding-top: 15px;
+}
+.navconmunity>img{
+    display: block;
+    margin: 0 auto;
+    height: 80px;
+    width: 300px;
+}
+.navconmunity button{
+    height: 50px;
+    width: 150px;
+    font: 16px/50px "Microsoft Yahei";
+    position: absolute;
+    background: white;;
+    right: 20px;
+    top: 30px;
+}
+/* 玩家画廊 */
+.gallery{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    background-size: 100%;
+    text-align: center;
+}
+.gallerypic{
+    width: 100%;
+    height: 100%;
+    background: url(../img/Full-Width-Image-2B-copy.png) no-repeat center;
+}
+.gallery:hover .gallerypic{
+    background-color: rgba(0,0,0,0.3);
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -ms-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px);   
+}
+[src="./img/logo-instagram.svg"]{
+    width: 60px;
+    height: 60px;
+}
+.galleryhide{
+    display: block;
+    padding: 100px 0;
+    text-align: center;
+    width: 460px;
+    height: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    display: none;
+}
+.galleryhide>h1{
+    font: 50px/100px "Droid Serif", "DroidSerifRegular", Georgia, serif; 
+    color: white;
+    font-weight: bold;
+}
+.galleryhide>p{
+    font: 30px/50px "Droid Serif", "DroidSerifRegular", Georgia, serif; 
+    color: white;
+}
+/* 联系我们 */
+.contact{
+    padding: 100px 0;
+    text-align: center;
+}
+.contact>.container>h1{
+    font: 50px/70px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    font-weight: bold;
+}
+.contact>.container>p{
+    font: 30px/50px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    margin-bottom: 50px;
+}
+.contact>.container>ol>li{
+    float: left;
+    width: 342px;
+    height: 120px;
+    background: url(../img/bs-bg2.png) no-repeat;
+    background-size: 100% 100%;
+    border: 2px solid gray;
+    margin: 10px;
+    position: relative;
+}
+.contact>.container>ol>li:hover{
+    background: url(../img/bs-bg-hover.png) no-repeat;
+    border: 2px solid #f9ce62;
+}
+.contact>.container>ol>li>img{
+    height: 124px;
+    width: 124px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contact>.container>ol>li>h4{
+    font: 27px/40px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-weight: bold;
+}
+.contact>.container>ol>li>p{
+    font: 18px/30px "Droid Serif", "DroidSerifRegular", Georgia, serif;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+}
+.contacticons{
+    margin-top: 50px;
+}
+.contacticons>img{
+    cursor: pointer;
+    margin: 0 10px;
+}
+.contacticons>img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+/* 地图 */
+.map{
+    height: 660px;
+    bottom: -50px;
+}
+.last{
+    width: 100%;
+    height: 660px;
+    position: relative;
+}
+.maptitle{
+    width: 100%;
+    height: 50px;
+    background: url(../img/line.png) no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+}

@@ -1,0 +1,27 @@
+.title{
+    height: 200px;
+    background-color: orange;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+.title>h1{
+    font: 50px/70px "Droid Serif Bold", "DroidSerifBold", Georgia, serif;
+    font-weight: bold;
+}
+.title>p{
+    font: 28px/50px "Droid Serif Bold", "DroidSerifBold", Georgia, serif;
+}
+.pic{
+    text-align: center;
+}
+.pic img{
+    width:300px;
+    height:300px;
+    margin: 10px;
+    border: 1px solid gray;
+}
+.pic img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}

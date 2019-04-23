@@ -1,0 +1,14 @@
+.title{
+    height: 200px;
+    background-color: orange;
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+}
+.title>h1{
+    font: 50px/70px "Droid Serif Bold", "DroidSerifBold", Georgia, serif;
+    font-weight: bold;
+}
+.title>p{
+    font: 28px/50px "Droid Serif Bold", "DroidSerifBold", Georgia, serif;
+}

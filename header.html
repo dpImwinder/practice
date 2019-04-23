@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="关键词">
+    <meta name="description" content="网站描述">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+
+    <script>
+        $(function(){
+            // 二级菜单
+            $('.up-pro').on('click',function(){
+                $('.up-proshow').slideToggle('slow');
+            })
+            $('.nav-s1').on('click',function(){
+                $('.sl1').slideToggle('slow');
+            })
+            $('.nav-s2').on('click',function(){
+                $('.sl2').slideToggle('slow');
+
+            // 向下拉动自动变化导航
+            
+
+            })
+
+        })
+        // $(function(){
+        //     $('.first-list>li').hover(function(){
+        //         $(this).find("ol").stop().slideDown(600,'elasticOut');
+        //     },function(){
+        //         $(this).find("ol").stop().slideUp(600,'elasticIn');
+        //     })
+        // })
+    </script>
+
+</head>
+<body>
+    <!-- 顶部页面部分 -->
+    <section class="header">
+        <div class="up">
+            <ul class="first-list">
+                <li class="fl up-pro"><a href="#">我们的其他产品<img src="./img/iconfinder_arrow_down_alt.png"></a></li>
+                <ol class="second-list up-proshow">
+                        <li class="fl"><img src="./img/GW-40k-card.png"></li>
+                        <li class="fl"><img src="./img/GW-AoS-card.png"></li>
+                        <li class="fl"><img src="./img/GW-BFS-card.png"></li>
+                        <li class="fl"><img src="./img/GW-KT-card.png"></li>
+                        <li class="fl"><img src="./img/GW-ME-card.png"></li>
+                        <li class="fl">敬请期待...</li>
+                    </ol>
+                <div class="fl"></div>
+                <li class="fl"><a href="./gallery.html">玩家画廊</a></li>
+                <div class="fl"></div>
+                <li class="fl"><a href="./ex2.html">影廊</a></li>
+            </ul>
+        </div>
+        <div class="container">
+                <div class="logo">
+                    <a href="./index.html">战锤40K</a>
+                </div>
+                <div class="nav">
+                    <ul class="first-list">
+                        <li><a href="./index.html">首页</a></li>
+                        <li class="nav-s1"><a href="#">从这开始<img src="./img/iconfinder_arrow_down_alt.png"></a></li>
+                        <li><a href="./list.html">战锤社区</a></li>
+                        <li class="nav-s2"><a href="#">关于我们<img src="./img/iconfinder_arrow_down_alt.png"></a></li>
+                        <li><a href="./news.html?type=companyEnvironment">人力资源</a></li>
+                        <li><a href="./news.html?type=telUs">联系我们</a></li>
+                    </ul>
+                </div>
+        </div>
+        <ol class="second-list sl1">
+            <li><a href="./aboutXX.html">新手教程</a></li>
+            <li><a href="./aboutXX.html#1">收藏</a></li>
+            <li><a href="./aboutXX.html#2">组装</a></li>
+            <li><a href="./aboutXX.html#3">上色</a></li>
+            <li><a href="./aboutXX.html#4">开始一场竞赛</a><span></span></li>
+        </ol>
+        <ol class="second-list sl2">
+            <li><a href="./news.html?type=talents">人才</a></li>
+            <li><a href="./news.html?type=team">团队</a></li>
+            <li><a href="./news.html?type=joinUs">招聘</a></li>
+        </ol>
+    </section>
+</body>
+</html>

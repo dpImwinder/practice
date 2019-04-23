@@ -1,0 +1,116 @@
+.header{
+    background: black;
+    width: 100%;
+}
+.up{
+    height: 40px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    position: relative;
+}
+.up li>a{
+    font: 16px/40px "Microsoft Yahei";
+    color: white;
+    margin-left: 10px;
+}
+.up li>a:hover{
+    color: yellow;
+}
+.up li>a>img{
+    margin: 10px 5px;
+    height: 20px;
+}
+.up div{
+    height: 30px;
+    width: 0;
+    border-left: 2px solid gray;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+/* 第一行的二级菜单 */
+.up .second-list{
+    background: rgb(25, 25, 25);
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    z-index: 10;
+    top: 41px;
+    display: none;
+}
+.up .second-list li{
+    margin:10px 20px;
+    font: 20px/220px "Microsoft Yahei";
+    color: white;
+}
+.up .second-list img{
+    height: 200px;
+}
+/* 导航栏开始 */
+.logo{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    text-indent: -9999em;
+    position: relative;
+}
+.logo>a{
+    width: 265px;
+    height: 61px;
+    background: url(../img/warhammer40k-logo.png) no-repeat 0 0;
+    background-size: 100%;
+    display: block;
+    top: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+}
+.nav{
+    height: 60px;
+    width: 100%;
+    background: black;
+}
+.nav li>a>img{
+    height: 30px;
+    margin: 10px 7px;
+}
+.first-list{
+    position: relative;
+}
+.nav .first-list>li{
+    float: left;
+    margin: 0 25px 10px 25px;
+}
+.nav .first-list>li>a{
+    font: 25px/50px "Microsoft Yahei";
+    color: white;
+}
+.nav .first-list>li>a:hover{
+    color: yellow;
+}
+/* 导航栏的二级菜单 */
+.header>.second-list{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0 30px 0;
+    display: none;
+    z-index: 10;
+}
+.header>.second-list>li>a{
+    font: 20px/50px "Microsoft Yahei";
+    color: white;
+}
+.sl1{
+    background: url(../img/nav-1.jpg) no-repeat center;
+    background-size:100%;
+}
+.sl2{
+    background: url(../img/nav-2.jpg) no-repeat center;
+    background-size:100%;
+}
+.header>.second-list>li>a:hover{
+    color: yellow;
+}
